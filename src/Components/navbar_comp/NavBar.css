@@ -1,0 +1,170 @@
+img {
+  width: 120px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+:root {
+  --primary : #FFC92F;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none; /*supprime toute indication visible de focus*/
+  border: none;
+  font-size: 18px;
+  color : #000;
+  cursor: pointer;
+  background-color: var(--primary);
+}
+
+
+.btn:hover {
+  padding: 6px 18px;
+  transition: all 0.1s ease-out;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid var(--primary);
+}
+
+.navbar {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%,
+   rgb(26, 23, 23) 100%);
+  height: 60px;
+  display: flex; /*disposer une collection d'éléments dans un sens */
+  justify-content: center; /*https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_justify-content*/
+  align-items: center; /*les lignes d'écriture au centre */
+  font-size: 1.2rem; /*tailles de police*/
+}
+
+.nav-menu {
+  display: grid; /*se compose d'un élément parent, avec un ou plusieurs éléments enfants.*/
+  grid-template-columns: repeat(5, auto); /* spécifie le nombre et les largeurs de colonnes
+   dans une disposition de grid.*/
+  grid-gap: 10px; /*utilisée pour définir à la fois l'écart de ligne et l'écart de colonne en une seule valeur*/
+  list-style: none; /*Le list-style-type spécifie le type de marqueur d'élément de liste dans une liste.*/
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  background-color: #FFC92F;
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+}
+
+.fa-bars {
+  color: #fff;
+}
+
+.nav-links-mobile {
+  display: none; /*supprime complètement l'élément du document*/
+}
+
+.menu-icon {
+  display: none; /*supprime complètement l'élément du document*/
+}
+
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+   /*Sur les écrans de 960 pixels de large ou moins, 
+    faites empiler les liens de menu les uns sur les 
+    autres plutôt que les uns à côté des autres*/
+
+  .nav-menu {
+    display: flex;
+    flex-direction:column;
+    width: 100%; /* mois de 100 la liste se deplace en gauche*/
+    height: 80vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #242222;
+    left: 0;
+    opacity: 10; /*transparence*/
+    transition: all 0.5s ease;
+    z-index: 99; /*contrôle l 'ordre 
+    d' empilement vertical des éléments qui se chevauchent*/
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #FFC92F;
+    border-radius: 0;
+  }
+
+  .menu-icon {
+    display: block; /*l'élément est affiché sous forme de bloc , 
+    comme les paragraphes et les en-têtes l'ont toujours été.*/
+    position: absolute; /*se déplace avec le défilement de la page*/
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 30%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #FFC92F;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #000;
+    transition: 250ms;
+    border: 3px solid var(--primary);
+
+  }
+
+  button {
+    display: none;
+  }
+}
+
+/*Margin is an element's personal space — how 
+much distance the element wants to keep with other
+ elements around it.Padding accommodates the gap by
+  either growing its own size 
+or by shrinking the size of content inside it*/

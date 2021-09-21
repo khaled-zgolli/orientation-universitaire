@@ -1,0 +1,226 @@
+.wrapper {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFC92F;
+}
+
+.wrapper_connecter {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFC92F;
+}
+.form-wrapper-signin{
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #505050;
+  background-color: #fff;
+}
+
+.form-wrapper {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #505050;
+  background-color: #fff;
+}
+
+.form-wrapper-sign {
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 50px #505050;
+  background-color: #fff;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  color: #111;
+  font-weight: lighter;
+}
+
+label {
+  font-size: 0.97em;
+  margin-bottom: 0.25em;
+  color: #222;
+  font-weight: lighter;
+}
+
+center {
+  color:#505050
+}
+input,
+select{
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cfcfcf;
+}
+
+input::placeholder{
+  font-size: 1.2em;
+  font-weight: lighter;
+  color: #999;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.75em;
+  display: relatives;
+}
+
+.Nom_prénom,
+.Confirm_M_passe,
+.email,
+.M_passe,
+.Ville,
+.Section,
+.Niveau,
+.D_obtenu,
+.filières,
+.domaines,
+.Mot_passe,
+.email_auth{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.Nom_prénom,
+.M_passe,
+.Ville,
+.Niveau{
+  margin-right: 1%;
+}
+
+.email,
+.Nom,
+.Confirm_M_passe,
+.Section,
+.D_obtenu{
+  margin-left: 3%;
+}
+
+.Nom_prénom,
+.Confirm_M_passe,
+.Ville,
+.email,
+.Section,
+.M_passe,
+.Niveau,
+.D_obtenu{
+  width: 47%;
+}
+
+.filières,
+.domaines{
+  width: 98%;
+}
+
+.oblig{
+  color:red;
+}
+
+.createAccount {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createAccount button {
+  background-color: #FFC92F;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  margin-top: 1em;
+  padding: 8px 0px;
+  font-size: 1em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  cursor: pointer;
+}
+
+.createAccount button:hover {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #FFC92F;
+}
+
+.createAccount small {
+  color: #000;
+  font-weight: lighter;
+}
+.container {
+  flex-wrap: wrap;
+  display: flex;
+  margin: 5px;
+}
+
+.container div {
+  margin: 5px;
+}
+
+.container div label {
+  cursor: pointer;
+}
+
+.container div label input[type="checkbox"] {
+  display: none;
+}
+
+.container div label span{
+  position: relative;
+  display: inline-block;
+  background: #ebebeb;
+  padding: 12px 9px;
+  color: #000;
+  border-radius: 6%;
+  font-size: small;
+  overflow: hidden;
+}
+
+.container div label input[type="checkbox"]:checked~span{
+background: #FFC92F;
+color: #000;
+}
+
+.Mot_passe,
+.email_auth{
+  width: 98%;
+}
+
+a{
+  text-decoration:none;
+  color: #505050;
+}
+
+.oublie{
+  color: #505050;
+}

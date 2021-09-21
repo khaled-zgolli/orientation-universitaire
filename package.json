@@ -1,0 +1,88 @@
+{
+  "name": "react-dropdown-navbar-yt",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^29.1.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
+    "@date-io/date-fns": "^1.3.13",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@material-ui/pickers": "^3.3.10",
+    "@sweetalert2/theme-material-ui": "^5.0.1",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "chroma-js": "^2.1.2",
+    "date-fns": "^2.23.0",
+    "draft-js": "^0.11.7",
+    "draft-wysiwyg": "^0.2.4",
+    "formik": "^2.2.8",
+    "formik-material-ui": "^3.0.1",
+    "html-react-parser": "^1.2.8",
+    "jodit-react": "^1.1.1",
+    "moment": "^2.29.1",
+    "node-sass": "^6.0.1",
+    "prismic-reactjs": "^1.3.4",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-bootstrap-table-next": "^4.0.3",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-dom": "^17.0.2",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-draggable-multi-select": "^1.1.8",
+    "react-hooks": "^1.0.1",
+    "react-hooks-helper": "^1.6.0",
+    "react-hooks-lib": "^0.5.0",
+    "react-icons": "^4.2.0",
+    "react-material-ui-carousel": "^2.3.1",
+    "react-multi-select-component": "^4.0.2",
+    "react-pro-sidebar": "^0.6.0",
+    "react-responsive-carousel": "^3.2.21",
+    "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.4.3",
+    "react-rte": "^0.16.3",
+    "react-scripts": "4.0.3",
+    "react-scrollable-anchor": "^0.6.1",
+    "react-select": "^4.3.1",
+    "react-slick": "^0.28.1",
+    "react-swipe-card": "^0.1.4",
+    "recharts": "^2.0.10",
+    "sass": "^1.35.2",
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^10.16.9",
+    "swiper": "^6.8.3",
+    "web-vitals": "^1.1.1",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "multiselect-react-dropdown": "^1.6.11"
+  }
+}
